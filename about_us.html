@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avasa Foundation - About Us</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #e91e63;
+      --primary-light: #fce4ec;
+      --dark: #212121;
+      --gray: #555;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--primary-light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      color: var(--gray);
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .about p {
+      max-width: 95%;
+      margin: 0.5rem auto;
+    }
+
+    .mission, .vision {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .mission:hover, .vision:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .team-card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid var(--primary);
+    }
+
+    .team-card h3 {
+      margin-bottom: 0.3rem;
+      font-size: 1.2rem;
+    }
+
+    .team-card p {
+      font-size: 1rem;
+    }
+
+    hr.section-divider {
+      border: none;
+      height: 1.5px;
+      background: #ccc;
+      margin: 3rem auto;
+      width: 80%;
+    }
+
+    /* ✅ Responsive for max-width 479px */
+    @media (max-width: 479px) {
+      h1, h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      .container {
+        padding: 1.2rem;
+      }
+
+      .mission, .vision {
+        padding: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .team-card {
+        padding: 1rem;
+        max-width: 90%;
+      }
+
+      .team-card img {
+        width: 90px;
+        height: 90px;
+      }
+
+      .team-members {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- About Us -->
+    <section class="about" data-aos="fade-up">
+      <h1>About Us</h1>
+      <p>
+        Avasa Foundation is a non-profit organization dedicated to creating a meaningful impact in the lives of underprivileged communities. [Placeholder – Replace with real content]
+      </p>
+      <p>
+        We focus on sustainable development, education, and empowerment to bring lasting change to society.
+      </p>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission" data-aos="fade-right">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to uplift underprivileged communities by creating equitable access to education, healthcare, and livelihood opportunities. 
+        We aim to build sustainable models of empowerment by working at the grassroots level, especially focusing on children, women, and marginalized groups.
+        Through our initiatives, we strive to instill hope, nurture potential, and promote self-reliance in every individual we touch.
+      </p>
+    </section>
+
+    <!-- Vision -->
+    <section class="vision" data-aos="fade-left">
+      <h2>Our Vision</h2>
+      <p>
+        We envision a compassionate and inclusive society where every person, regardless of their background, has the opportunity to lead a life of dignity, purpose, and joy.
+        Our vision is a world where communities are resilient, children are educated, women are empowered, and people thrive together in harmony with equality, justice, and mutual respect.
+      </p>
+    </section>
+
+    <!-- Divider -->
+    <hr class="section-divider" />
+
+    <!-- Team -->
+    <section class="team" data-aos="fade-up">
+      <h1>Our Team</h1>
+      <div class="team-members">
+        <div class="team-card" data-aos="zoom-in">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+          <h3>John Doe</h3>
+          <p>Founder & Director</p>
+        </div>
+        <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jane Smith">
+          <h3>Jane Smith</h3>
+          <p>Program Manager</p>
+        </div>
+        <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Ahmed Khan">
+          <h3>Ahmed Khan</h3>
+          <p>Outreach Coordinator</p>
+        </div>
+        <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Priya Verma">
+          <h3>Priya Verma</h3>
+          <p>Volunteer Lead</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
